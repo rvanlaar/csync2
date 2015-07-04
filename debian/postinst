@@ -29,6 +29,16 @@ case "$1" in
                      'csync2\t\tstream\ttcp\tnowait\troot\t/usr/sbin/csync2\tcsync2 -i'
     fi
 
+    mkdir /etc/csync2
+        openssl genrsa -out /etc/csync2/csync2_ssl_key.pem 2048
+    yes '' | openssl req -new -key /etc/csync2/csync2_ssl_key.pem \
+        -out /etc/csync2/csync2_ssl_cert.csr
+    openssl x509 -req -days 3650 -in /etc/csync2/csync2_ssl_cert.csr \
+        -signkey /etc/csync2/csync2_ssl_key.pem \
+        -out /etc/csync2/csync2_ssl_cert.pem
+    rm /etc/csync2/csync2_ssl_cert.csr
+
+
 
     ;;
 

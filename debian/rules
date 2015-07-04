@@ -21,7 +21,7 @@ endif
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	./configure CFLAGS="$(CFLAGS)" --prefix=/usr --localstatedir=/var --sysconfdir=/etc --enable-mysql --enable-postgres --enable-sqlite3
+	./configure CFLAGS="$(CFLAGS)" --prefix=/usr --localstatedir=/var --sysconfdir=/etc/csync2 --enable-sqlite3
 	touch configure-stamp
 
 build: build-stamp

@@ -7,7 +7,7 @@ Standards-Version: 3.6.2
 
 Package: csync2
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, netbase (>=4.25), openbsd-inetd
 Suggests: sqlite
 Description: cluster synchronization tool
  CSYNC2 synchronizes files in a cluster using the rsync-algorithm.
