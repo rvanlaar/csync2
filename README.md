@@ -1,3 +1,15 @@
+About this repository
+=====================
+
+This repository was meant as a placeholder to have a csync2 2.0 debian package.
+Ubuntu now includes a recent csync2 package. 
+
+There is an excellent mailinglist for questions about csync2.
+Please post questions or bug reports there:
+http://lists.linbit.com/mailman/listinfo/csync2
+
+For bugs regarding the csync2 package installed from this git repository:
+https://github.com/rvanlaar/csync2/issues
 
 About csync2
 ============
